@@ -1,5 +1,6 @@
+/// <reference types="vite-plugin-svgr/client" />
 import React, { useState } from 'react'
-import ReactLogo from './assets/react.svg?react'
+import AppLogo from '../assets/appLogo.svg?react'
 import './App.css'
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <>
       <div>
         <a href="https://react.dev" target="_blank">
-          <ReactLogo className="logo react" alt="React logo" />
+          <AppLogo className="logo react" aria-hidden="true" />
         </a>
       </div>
       <h1>Vite + React</h1>
