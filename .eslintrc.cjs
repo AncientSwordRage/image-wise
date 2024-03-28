@@ -6,9 +6,11 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
+    'airbnb',
+    'airbnb-typescript',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
-  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
+  ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.js', './src/assets'],
+  parserOptions: { ecmaVersion: 'latest', sourceType: 'module', project: ['./tsconfig.json'] },
   settings: { react: { version: '18.2' } },
   plugins: ['react-refresh'],
   rules: {
@@ -16,5 +18,6 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'import/prefer-default-export': 'off'
   },
 }
