@@ -23,6 +23,7 @@ function PageLayout({ page }: PageLayoutProps) {
               color="inherit"
               aria-label="menu"
               sx={{ mr: 0, flexGrow: 0 }}
+              href='/'
             >
               <SvgIcon component={AppLogo} inheritViewBox aria-hidden="true" />
             </IconButton>
