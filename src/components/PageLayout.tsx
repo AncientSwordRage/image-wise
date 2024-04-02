@@ -1,5 +1,6 @@
 /// <reference types="vite-plugin-svgr/client" />
 import React, { ReactNode } from 'react';
+import { useLocation } from "react-router-dom";
 import {
   AppBar, Box, Button, IconButton, Toolbar, Typography, SvgIcon, Paper,
 } from '@mui/material';
@@ -12,8 +13,10 @@ interface PageLayoutProps {
 
 function PageLayout({ page }: PageLayoutProps) {
   const pages = ['gallery'];
+  const location = useLocation();
+  console.log(location.pathname);
   return (
-    <>
+    <Box sx={{height: "100%"}}>
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="fixed">
           <Toolbar>
@@ -40,6 +43,7 @@ function PageLayout({ page }: PageLayoutProps) {
           marginTop: 'calc(10% + 60px)',
           position: 'fixed',
           bottom: 0,
+          left: 0,
           width: '100%',
         }}
         component="footer"
@@ -48,7 +52,7 @@ function PageLayout({ page }: PageLayoutProps) {
       >
         Placeholder Footer
       </Paper>
-    </>
+    </Box>
   );
 }
 

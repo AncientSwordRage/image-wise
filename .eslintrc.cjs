@@ -18,6 +18,7 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    'import/prefer-default-export': 'off'
+    'import/prefer-default-export': 'off',
+    'max-len': ["error", { "code": 80 }]
   },
 }
