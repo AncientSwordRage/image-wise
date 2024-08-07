@@ -1,12 +1,13 @@
 {
     "compilerOptions": {
         "target": "ESNext",
-        "module": "NodeNext",
+        "module": "ES2022",
+        "moduleResolution": "Bundler",
         "jsx": "react-jsx",
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
     },"include": [
         "src/**/*" // *** The files TypeScript should type check ***
       ],
